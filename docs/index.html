@@ -135,7 +135,8 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li class="level1"><a href="#autotoc_md8">Contributions and support</a></li>
 </ul>
 </div>
-<div class="textblock"><p><a class="anchor" id="md__d_1_2home_2desktop_2github_2crystallography-model_2_r_e_a_d_m_e"></a> A 3d simulator of crystallography interference and diffraction images by using the Laue's equation. It's written in C and it uses the <a href="https://www.vulkan.org"><code>Vulkan API</code></a>, <a href="https://mrsinho.github.io/shengine-docs"><code>shengine</code></a> and <a href="https://github.com/mrsinho/shvulkan"><code>shvulkan</code></a>.</p>
+<div class="textblock"><p><a class="anchor" id="md__d_1_2home_2desktop_2github_2crystallography-model_2_r_e_a_d_m_e"></a> </p><dl class="section warning"><dt>Warning</dt><dd><em>This is a pre-release version, first release is expected to be by the end of <b>August 2024</b>.</em></dd></dl>
+<p>A 3d simulator of crystallography interference and diffraction images using the Laue's equation. It's written in C and it uses the <a href="https://www.vulkan.org"><code>Vulkan API</code></a>, <a href="https://mrsinho.github.io/shengine-docs"><code>shengine</code></a> and <a href="https://github.com/mrsinho/shvulkan"><code>shvulkan</code></a>.</p>
 <p><img src="https://img.shields.io/badge/Sinho_softworks-006400?style=for-the-badge&amp;logo=&amp;logoColor=white&amp;labelColor=990042" alt="" class="inline"/> <a href="https://github.com/mrsinho/crystallography-model"><img src="https://img.shields.io/badge/GitHub_repository-000000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="" class="inline"/></a></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Overview</h1>
@@ -145,26 +146,36 @@ Overview</h1>
 <p><img src="https://img.shields.io/badge/Written_in_C-006400?style=for-the-badge&amp;logo=c&amp;logoColor=white&amp;labelColor=003200#.svg" alt="" class="inline"/> <img src="https://img.shields.io/badge/Compatible_with_C%2b%2b-006400?style=for-the-badge&amp;logo=c%2b%2b&amp;logoColor=white&amp;labelColor=003200#.svg" alt="" class="inline"/></p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 (Skip) CMakeLists.txt generation</h1>
+<dl class="section warning"><dt>Warning</dt><dd><em>Skip this step if you are not the developer.</em></dd></dl>
 <div class="fragment"><div class="line">cd externals/shengine</div>
 <div class="line">python export-application.py name=crystal-model path=../../crystal-model</div>
-</div><!-- fragment --><p>If you exectued the command above by mistake just type ¯git stash` on the terminal.</p>
+</div><!-- fragment --><p>If you exectued the command above by mistake just type <code>git stash</code> on the terminal.</p>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Generate project files and build</h1>
 <p>Building the program is fairly simple:</p>
-<div class="fragment"><div class="line">mkdir crystal-model/build</div>
+<div class="tabbed"></div><div class="tabbed"><ul>
+<li><b class="tab-title">Windows</b> <div class="fragment"><div class="line">mkdir crystal-model/build</div>
 <div class="line">mkdir crystal-model/build/windows</div>
 <div class="line">cd    crystal-model/build/windows</div>
 <div class="line">cmake ../../ -DCRYSTAL_MODEL_BINARY_TYPE=EXECUTABLE -DSH_ENGINE_ROOT_DIR=&quot;repo/absolute/path/externals/shengine&quot;</div>
 <div class="line">cmake --build .</div>
-</div><!-- fragment --><div class="fragment"><div class="line">mkdir crystal-model/build</div>
+</div><!-- fragment --></li>
+<li><b class="tab-title">Linux</b> <div class="fragment"><div class="line">mkdir crystal-model/build</div>
 <div class="line">mkdir crystal-model/build/linux</div>
 <div class="line">cd    crystal-model/build/linux</div>
 <div class="line">cmake ../../ -DCRYSTAL_MODEL_BINARY_TYPE=EXECUTABLE -DSH_ENGINE_ROOT_DIR=&quot;repo/absolute/path/externals/shengine&quot;</div>
 <div class="line">cmake --build .</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --></li>
+</ul>
+</div><div class="tabbed"></div><h1><a class="anchor" id="autotoc_md4"></a>
 Run crystal model executable</h1>
-<div class="fragment"><div class="line">./bin/windows/crystal-model</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+<div class="tabbed"></div><div class="tabbed"><ul>
+<li><b class="tab-title">Windows</b> <div class="fragment"><div class="line">./crystal-model/bin/windows/crystal-model</div>
+</div><!-- fragment --></li>
+<li><b class="tab-title">Linux</b> <div class="fragment"><div class="line">./crystal-model/bin/linux/crystal-model</div>
+</div><!-- fragment --></li>
+</ul>
+</div><div class="tabbed"></div><h1><a class="anchor" id="autotoc_md5"></a>
 Usage of configuration files</h1>
 <p>At <code>crystal-model/smd/saved.smd</code> you can edit the main parameters used in crystallography, suchh as the incident ray wavelength and orientation in space, the lattice unit structure and the photosensitive matrix or film distance from the crystal.</p>
 <div class="fragment"><div class="line">FLOAT32    ^^ 1    !! lambda_ag       --&gt; 5 ***</div>
