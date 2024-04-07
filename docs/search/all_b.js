@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pre_20release_0',['crystallography-model (pre-release)',['../index.html',1,'']]],
-  ['project_20files_20and_20build_1',['Generate project files and build',['../index.html#autotoc_md3',1,'']]]
+  ['of_20configuration_20files_0',['Usage of configuration files',['../index.html#autotoc_md5',1,'']]],
+  ['overview_1',['Overview',['../index.html#autotoc_md1',1,'']]]
 ];

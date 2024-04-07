@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x_0',['x',['../structmodelvec4.html#afa791a0ff8ba87c00075870b048b7b7a',1,'modelvec4::x'],['../structmodelvec2.html#a250aaf28dcba8d4fb00f34d85155db66',1,'modelvec2::x']]]
+  ['w_0',['w',['../structmodelvec4.html#ab5c9d35871d9df7a6dc0b31deb610862',1,'modelvec4::w'],['../structmodelvec2.html#ab0878e4a1e3ab7774f20dd447e2c31f7',1,'modelvec2::w']]],
+  ['windows_20build_20logs_1',['Windows build logs',['../md__d_1_2home_2desktop_2github_2crystallography-model_2_8shci_2windows_2log.html',1,'']]]
 ];

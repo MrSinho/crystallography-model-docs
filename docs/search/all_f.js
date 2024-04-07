@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['usage_20of_20configuraction_20files_0',['Usage of configuraction files',['../index.html#autotoc_md5',1,'']]]
+  ['to_20do_20pre_20release_20_3a_0',['To do (pre-release):',['../index.html#autotoc_md7',1,'']]],
+  ['txt_20generation_1',['(Skip) CMakeLists.txt generation',['../index.html#autotoc_md2',1,'']]]
 ];

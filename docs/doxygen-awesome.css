@@ -313,7 +313,7 @@ body {
 body, table, div, p, dl, #nav-tree .label, .title,
 .sm-dox a, .sm-dox a:hover, .sm-dox a:focus, #projectname,
 .SelectItem, #MSearchField, .navpath li.navelem a,
-.navpath li.navelem a:hover, p.reference, p.definition, div.toc li, div.toc h3 {
+.navpath li.navelem a:hover, p.reference, p.definition {
     font-family: var(--font-family);
 }
 
@@ -334,7 +334,6 @@ p.reference, p.definition {
 a:link, a:visited, a:hover, a:focus, a:active {
     color: var(--primary-color) !important;
     font-weight: 500;
-    background: none;
 }
 
 a.anchor {
@@ -807,10 +806,6 @@ html.dark-mode iframe#MSearchResults {
     line-height: var(--tree-item-height);
 }
 
-#nav-tree .item > a:focus {
-    outline: none;
-}
-
 #nav-sync {
     bottom: 12px;
     right: 12px;
@@ -848,7 +843,6 @@ html.dark-mode iframe#MSearchResults {
 
 #nav-tree .arrow {
     opacity: var(--side-nav-arrow-opacity);
-    background: none;
 }
 
 .arrow {
@@ -2466,17 +2460,17 @@ h2:hover a.anchorlink, h1:hover a.anchorlink, h3:hover a.anchorlink, h4:hover a.
  Optional tab feature
 */
 
-.tabbed > ul {
+.tabbed ul {
     padding-inline-start: 0px;
     margin: 0;
     padding: var(--spacing-small) 0;
 }
 
-.tabbed > ul > li {
+.tabbed li {
     display: none;
 }
 
-.tabbed > ul > li.selected {
+.tabbed li.selected {
     display: block;
 }
 

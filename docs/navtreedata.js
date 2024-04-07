@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "crystallography model", "index.html", [
-    [ "crystallography-model (pre-release)", "index.html", "index" ],
+    [ "crystallography-model", "index.html", "index" ],
     [ "Linux build logs", "md__d_1_2home_2desktop_2github_2crystallography-model_2_8shci_2linux_2log.html", null ],
     [ "Windows build logs", "md__d_1_2home_2desktop_2github_2crystallography-model_2_8shci_2windows_2log.html", null ],
     [ "Data Structures", "annotated.html", [

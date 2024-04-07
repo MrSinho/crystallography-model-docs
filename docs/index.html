@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>crystallography model: crystallography-model (pre-release)</title>
+<title>crystallography model: crystallography-model</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">crystallography-model (pre-release) </div></div>
+  <div class="headertitle"><div class="title">crystallography-model </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
@@ -129,9 +129,9 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li class="level1"><a href="#autotoc_md2">(Skip) CMakeLists.txt generation</a></li>
 <li class="level1"><a href="#autotoc_md3">Generate project files and build</a></li>
 <li class="level1"><a href="#autotoc_md4">Run crystal model executable</a></li>
-<li class="level1"><a href="#autotoc_md5">Usage of configuraction files</a></li>
+<li class="level1"><a href="#autotoc_md5">Usage of configuration files</a></li>
 <li class="level1"><a href="#autotoc_md6">Commands</a></li>
-<li class="level1"><a href="#autotoc_md7">To do:</a></li>
+<li class="level1"><a href="#autotoc_md7">To do (pre-release):</a></li>
 <li class="level1"><a href="#autotoc_md8">Contributions and support</a></li>
 </ul>
 </div>
@@ -151,21 +151,21 @@ Overview</h1>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Generate project files and build</h1>
 <p>Building the program is fairly simple:</p>
-<div class="fragment"><div class="line">mkdir model/build</div>
-<div class="line">mkdir model/build/windows</div>
-<div class="line">cd    model/build/windows</div>
+<div class="fragment"><div class="line">mkdir crystal-model/build</div>
+<div class="line">mkdir crystal-model/build/windows</div>
+<div class="line">cd    crystal-model/build/windows</div>
 <div class="line">cmake ../../ -DCRYSTAL_MODEL_BINARY_TYPE=EXECUTABLE -DSH_ENGINE_ROOT_DIR=&quot;repo/absolute/path/externals/shengine&quot;</div>
 <div class="line">cmake --build .</div>
-</div><!-- fragment --><div class="fragment"><div class="line">mkdir model/build</div>
-<div class="line">mkdir model/build/linux</div>
-<div class="line">cd    model/build/linux</div>
+</div><!-- fragment --><div class="fragment"><div class="line">mkdir crystal-model/build</div>
+<div class="line">mkdir crystal-model/build/linux</div>
+<div class="line">cd    crystal-model/build/linux</div>
 <div class="line">cmake ../../ -DCRYSTAL_MODEL_BINARY_TYPE=EXECUTABLE -DSH_ENGINE_ROOT_DIR=&quot;repo/absolute/path/externals/shengine&quot;</div>
 <div class="line">cmake --build .</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Run crystal model executable</h1>
 <div class="fragment"><div class="line">./bin/windows/crystal-model</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
-Usage of configuraction files</h1>
+Usage of configuration files</h1>
 <p>At <code>crystal-model/smd/saved.smd</code> you can edit the main parameters used in crystallography, suchh as the incident ray wavelength and orientation in space, the lattice unit structure and the photosensitive matrix or film distance from the crystal.</p>
 <div class="fragment"><div class="line">FLOAT32    ^^ 1    !! lambda_ag       --&gt; 5 ***</div>
 <div class="line">FLOAT32    ^^ 4    !! incident_ray    --&gt; 1, 0, 0 ***</div>
@@ -191,7 +191,7 @@ Commands</h1>
 <img src="render3.png" alt=""/>
 </div>
     <h1><a class="anchor" id="autotoc_md7"></a>
-To do:</h1>
+To do (pre-release):</h1>
 <ul>
 <li>Generate real 3d cones with shaders (need to rewrite shaders)</li>
 <li>Add projections of the cones on the film<ul>
@@ -206,6 +206,7 @@ To do:</h1>
 <li>Compute interference coordinates and angles before fragment shader. Then check pixel coordinates with a tolerance threshold.</li>
 <li>From soure image to 3d model</li>
 <li>Make separate views of lattice and of interference rendering</li>
+<li>shci tests</li>
 </ul>
 <div class="image">
 <img src="d=2lambda.png" alt=""/>

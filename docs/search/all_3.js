@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['do_3a_0',['To do:',['../index.html#autotoc_md7',1,'']]],
-  ['dst_5fbuffer_1',['dst_buffer',['../struct_model.html#af87399e01e0e44b7584af54a94800869',1,'Model']]],
-  ['dst_5fmemory_2',['dst_memory',['../struct_model.html#a24587f97a28d35c946990d40fbedebd3',1,'Model']]]
+  ['cmakelists_20txt_20generation_0',['(Skip) CMakeLists.txt generation',['../index.html#autotoc_md2',1,'']]],
+  ['commands_1',['Commands',['../index.html#autotoc_md6',1,'']]],
+  ['configuration_20files_2',['Usage of configuration files',['../index.html#autotoc_md5',1,'']]],
+  ['contributions_20and_20support_3',['Contributions and support',['../index.html#autotoc_md8',1,'']]],
+  ['copy_5ffence_4',['copy_fence',['../struct_model.html#a067fb9ae1f4590bf5bf19e378cd7e4d5',1,'Model']]],
+  ['crystal_20model_20executable_5',['Run crystal model executable',['../index.html#autotoc_md4',1,'']]],
+  ['crystal_2dmodel_2eh_6',['crystal-model.h',['../crystal-model_8h.html',1,'']]],
+  ['crystallography_20model_7',['crystallography-model',['../index.html',1,'']]]
 ];

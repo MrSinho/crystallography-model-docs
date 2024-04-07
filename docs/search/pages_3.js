@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['model_20pre_20release_0',['crystallography-model (pre-release)',['../index.html',1,'']]]
+  ['model_0',['crystallography-model',['../index.html',1,'']]]
 ];
